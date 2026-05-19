@@ -1,38 +1,34 @@
 import { Reveal } from '../components/ui/Reveal';
 import { Crosshair } from '../components/ui/Crosshair';
+import { SectionBar } from '../components/ui/SectionBar';
 
 const contacts = [
-  { name: "Email", handle: "shazaanraza123@gmail.com", href: "mailto:shazaanraza123@gmail.com" },
-  { name: "LinkedIn", handle: "/in/Muhammedraza8", href: "https://linkedin.com/in/Muhammedraza8" },
-  { name: "GitHub", handle: "shazaanraza123", href: "https://github.com/shazaanraza123" },
-  { name: "Portfolio", handle: "shazmainweb.netlify.app", href: "https://shazmainweb.netlify.app" },
+  { name: 'Email', handle: 'shazaanraza123@gmail.com', href: 'mailto:shazaanraza123@gmail.com' },
+  { name: 'LinkedIn', handle: '/in/Muhammedraza8', href: 'https://linkedin.com/in/Muhammedraza8' },
+  { name: 'GitHub', handle: 'shazaanraza123', href: 'https://github.com/shazaanraza123' },
+  { name: 'Portfolio', handle: 'https://shazmainweb.netlify.app', href: 'https://shazmainweb.netlify.app' },
 ];
 
 export function Contact() {
   return (
     <section id="contact" className="border-b border-neutral-900 bg-white">
-      {/* Metadata Strip */}
-      <div className="grid grid-cols-4 border-b border-neutral-200 text-[9px] font-mono uppercase tracking-widest">
-        <div className="p-3 border-r border-neutral-200">04</div>
-        <div className="p-3 border-r border-neutral-200">Contact</div>
-        <div className="p-3 border-r border-neutral-200"></div>
-        <div className="p-3">Open to opportunities</div>
-      </div>
+      <SectionBar cols={['05', 'Contact', '', 'Open to opportunities']} />
 
-      {/* Split Layout */}
       <div className="grid grid-cols-1 md:grid-cols-2">
-        {/* Left: Headline & Info */}
-        <div className="p-12 md:p-24 border-b md:border-b-0 md:border-r border-neutral-200 flex flex-col justify-between min-h-[500px]">
+        <div className="p-8 md:p-24 border-b md:border-b-0 md:border-r border-neutral-200 flex flex-col justify-between min-h-[400px] md:min-h-[500px]">
           <div>
             <Reveal>
               <h2 className="font-serif text-6xl md:text-8xl uppercase leading-none tracking-tight mb-8">
-                Let's<br />
-                <span className="italic font-light lowercase">work</span><br />
+                Let&apos;s
+                <br />
+                <span className="italic font-light lowercase">work</span>
+                <br />
                 together.
               </h2>
             </Reveal>
             <p className="font-serif text-lg leading-relaxed max-w-sm">
-              Open to product design roles, frontend positions, and select freelance projects. I respond to every message.
+              Open to product design roles, frontend positions, and select freelance projects. I
+              respond to every message.
             </p>
           </div>
           <div className="self-start mt-12">
@@ -40,10 +36,9 @@ export function Contact() {
           </div>
         </div>
 
-        {/* Right: Links */}
         <div className="flex flex-col border-l-0 md:border-l border-neutral-200">
           {contacts.map((contact) => (
-            <a 
+            <a
               key={contact.name}
               href={contact.href}
               target="_blank"

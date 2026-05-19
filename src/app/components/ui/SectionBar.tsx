@@ -1,12 +1,11 @@
-import { ReactNode } from 'react';
 import { cn } from '@/lib/utils';
 
-interface MetadataStripProps {
-  cols: [ReactNode, ReactNode, ReactNode, ReactNode];
+interface SectionBarProps {
+  cols: [string, string, string, string];
   className?: string;
 }
 
-export function MetadataStrip({ cols, className }: MetadataStripProps) {
+export function SectionBar({ cols, className }: SectionBarProps) {
   return (
     <div
       className={cn(
@@ -14,16 +13,16 @@ export function MetadataStrip({ cols, className }: MetadataStripProps) {
         className
       )}
     >
-      {cols.map((content, idx) => (
+      {cols.map((label, idx) => (
         <div
           key={idx}
           className={cn(
-            'p-3 flex items-start',
+            'p-3',
             idx < 3 && 'border-r border-neutral-200',
-            (idx === 1 || idx === 2) && 'hidden md:flex'
+            (idx === 1 || idx === 2) && 'hidden md:block'
           )}
         >
-          {content}
+          {label}
         </div>
       ))}
     </div>

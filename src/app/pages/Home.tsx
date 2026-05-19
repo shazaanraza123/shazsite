@@ -2,9 +2,10 @@ import { Nav } from '../sections/Nav';
 import { Hero } from '../sections/Hero';
 import { About } from '../sections/About';
 import { Work } from '../sections/Work';
+import { Projects } from '../sections/Projects';
 import { Capabilities } from '../sections/Capabilities';
 import { Statement } from '../sections/Statement';
-import { VirgilVideo } from '../sections/VirgilVideo';
+import { Inspiration } from '../sections/Inspiration';
 import { Contact } from '../sections/Contact';
 import { Music } from '../sections/Music';
 import { Footer } from '../sections/Footer';
@@ -18,9 +19,10 @@ export function Home() {
           <Hero />
           <About />
           <Work />
+          <Projects />
           <Capabilities />
           <Statement />
-          <VirgilVideo />
+          <Inspiration />
           <Contact />
           <Music />
         </main>
