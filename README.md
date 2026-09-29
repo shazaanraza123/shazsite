@@ -8,4 +8,8 @@
   Run `npm i` to install the dependencies.
 
   Run `npm run dev` to start the development server.
+
+  ## YE ARCHIVE scrape
+
+  `npm run archive` audits robots.txt, crawls permitted public sources, writes `data/`, `public/archive/`, and `figma-export/`. See `SOURCES.md`.
   
