@@ -1,30 +1,29 @@
 import { Link } from "react-router";
-import { curated } from "@/lib/archive";
-
-const LINKS: { name: string; to: string }[] = [
-  { name: "MUSIC", to: "/music" },
-  { name: "FASHION", to: "/fashion/regular-fit-ls-tee-h03" },
-  { name: "PERFORMANCE", to: "/archive" },
-  { name: "FILM", to: "/archive" },
-  { name: "DESIGN", to: "/era/yeezus" },
-  { name: "EPHEMERA", to: "/record/yetracker-3b678731de5e1b3a" },
-  { name: "PHOTOGRAPHY", to: "/archive" },
-  { name: "WRITING", to: "/archive" },
-  { name: "OBJECTS", to: "/archive" },
-];
+import { MEDIUMS } from "@/lib/archive";
+import { useJson } from "../useArchive";
+import type { DomainIndex } from "@/lib/archive";
 
 export function Medium() {
+  const data = useJson<{ domains: DomainIndex[] }>("/index/domains.json");
+  const bySlug = new Map((data?.domains ?? []).map((d) => [d.slug, d]));
+
   return (
     <main className="mediums fade-in">
       <h1 className="mediums__h">MEDIUM</h1>
       <p className="meta" style={{ maxWidth: 480, marginBottom: 40 }}>
-        Views into one archive. Counts are from the local scrape, not a store catalog.
+        Views into one archive. Counts are from the local scrape. Architecture is omitted —
+        it is not a domain in the records.
       </p>
-      {LINKS.filter((l) => curated.domains.includes(l.name)).map((l) => (
-        <Link key={l.name} to={l.to}>
-          {l.name}
-        </Link>
-      ))}
+      {MEDIUMS.map((m) => {
+        const d = bySlug.get(m.slug);
+        if (data && !d) return null;
+        return (
+          <Link key={m.slug} to={`/medium/${m.slug}`}>
+            {m.domain}
+            {d ? <span className="meta"> {d.count.toLocaleString()}</span> : null}
+          </Link>
+        );
+      })}
     </main>
   );
 }

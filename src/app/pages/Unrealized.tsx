@@ -1,7 +1,10 @@
+import { useMemo, useState } from "react";
 import { Link } from "react-router";
-import { figmaScreen } from "@/lib/archive";
+import { UNREALIZED_STATUSES, figmaScreen } from "@/lib/archive";
+import { ArchiveBrowser } from "../components/ArchiveBrowser";
 import { LazyImg } from "../components/LazyImg";
 import { Provenance } from "../components/Meta";
+import { useJson } from "../useArchive";
 
 export function Unrealized() {
   const items = figmaScreen("07-unrealized");
@@ -12,6 +15,16 @@ export function Unrealized() {
     list.push(item);
     bands.set(key, list);
   }
+
+  const data = useJson<{ statuses: { status: string; count: number }[] }>("/index/status.json");
+  const present = useMemo(() => {
+    const map = new Map((data?.statuses ?? []).map((s) => [s.status, s.count]));
+    return UNREALIZED_STATUSES.map((s) => ({ status: s, count: map.get(s) ?? 0 })).filter(
+      (s) => s.count > 0,
+    );
+  }, [data]);
+
+  const [status, setStatus] = useState<string | null>(null);
 
   return (
     <main className="unreal fade-in">
@@ -45,6 +58,31 @@ export function Unrealized() {
           </div>
         </section>
       ))}
+
+      <section className="unreal__index">
+        <h2 className="unreal__status">Statuses in the full archive</h2>
+        <div className="unreal__statuses">
+          {present.map((s) => (
+            <button
+              key={s.status}
+              type="button"
+              className={status === s.status ? "is-on" : ""}
+              onClick={() => setStatus(status === s.status ? null : s.status)}
+            >
+              {s.status}
+              <span className="meta"> {s.count.toLocaleString()}</span>
+            </button>
+          ))}
+        </div>
+        {status ? (
+          <ArchiveBrowser preset={{ status }} lock={["status"]} groupByDomain />
+        ) : (
+          <p className="meta" style={{ marginTop: 24 }}>
+            Select a status to read across mediums. Counts are source statuses, not a single
+            unreleased pile.
+          </p>
+        )}
+      </section>
     </main>
   );
 }

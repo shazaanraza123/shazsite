@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import { figmaScreen, packedById, FASHION_ID } from "@/lib/archive";
 import { LazyImg } from "../components/LazyImg";
 import { Provenance } from "../components/Meta";
@@ -46,6 +47,9 @@ export function Fashion() {
           </dd>
         </dl>
         {rec?.description ? <div className="garment__note">{rec.description}</div> : null}
+        <p className="meta" style={{ marginTop: 36 }}>
+          <Link to="/medium/fashion">Browse fashion records →</Link>
+        </p>
         <div className="garment__views">
           {rest.map((item, i) => (
             <figure key={item.file}>

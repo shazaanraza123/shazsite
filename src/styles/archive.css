@@ -192,7 +192,7 @@
   letter-spacing: -0.06em;
   line-height: 1;
   color: color-mix(in srgb, var(--ink) 12%, var(--paper));
-  pointer-events: none;
+  pointer-events: auto;
   font-weight: 500;
 }
 
@@ -623,6 +623,7 @@
   column-gap: 48px;
 }
 
+.people__list a,
 .people__list button {
   display: block;
   width: 100%;
@@ -649,6 +650,211 @@
   font-size: clamp(28px, 4vw, 52px);
   letter-spacing: -0.04em;
   padding: 10px 0;
+  border-top: 1px solid var(--rule);
+}
+
+/* BROWSE / TIME / YEAR / WORK */
+.browse {
+  margin-top: 36px;
+}
+
+.browse__bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px 36px;
+  padding: 8px 0 28px;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+
+.browse__f {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 120px;
+}
+
+.browse__f > span {
+  font-family: var(--font-meta);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+
+.browse__f select {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--ink);
+  padding: 4px 0 8px;
+  font-family: var(--font-meta);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  min-width: 140px;
+  cursor: pointer;
+}
+
+.browse__sort {
+  display: flex;
+  gap: 16px;
+  padding-top: 6px;
+}
+
+.browse__sort button,
+.browse__more {
+  font-family: var(--font-meta);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 3px;
+}
+
+.browse__sort button.is-on,
+.unreal__statuses button.is-on {
+  border-bottom-color: var(--ink);
+}
+
+.browse__count {
+  margin: 22px 0;
+}
+
+.browse__list,
+.browse__group {
+  display: flex;
+  flex-direction: column;
+}
+
+.browse__row {
+  display: grid;
+  grid-template-columns: 72px 1fr minmax(80px, 18vw);
+  gap: 24px;
+  align-items: start;
+  padding: 22px 0;
+  border-top: 1px solid var(--rule-soft);
+}
+
+.browse__yr {
+  font-family: var(--font-meta);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  padding-top: 6px;
+}
+
+.browse__title {
+  font-size: clamp(22px, 2.4vw, 34px);
+  letter-spacing: -0.04em;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.browse__still {
+  width: 100%;
+  mix-blend-mode: multiply;
+  justify-self: end;
+}
+
+.browse__still--empty {
+  min-height: 0;
+}
+
+.browse__more {
+  margin: 28px 0 8px;
+  width: max-content;
+  border-bottom-color: var(--ink);
+}
+
+.browse__domain {
+  font-size: clamp(28px, 4vw, 48px);
+  letter-spacing: -0.045em;
+  margin: 48px 0 8px;
+}
+
+.browse__disc,
+.browse__types,
+.work__extras,
+.unreal__statuses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 28px;
+  margin: 0 0 40px;
+}
+
+.browse__disc a,
+.browse__types a,
+.work__extra,
+.unreal__statuses button {
+  font-size: clamp(16px, 1.6vw, 22px);
+  letter-spacing: -0.03em;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 4px;
+}
+
+.time,
+.year {
+  padding: 8vh 28px 14vh;
+}
+
+.time__h,
+.year__h {
+  font-size: clamp(48px, 8vw, 110px);
+  letter-spacing: -0.055em;
+  line-height: 0.88;
+  margin: 0 0 20px;
+}
+
+.time__years {
+  display: flex;
+  flex-direction: column;
+}
+
+.time__year {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 24px;
+  align-items: baseline;
+  padding: 14px 0;
+  border-top: 1px solid var(--rule-soft);
+}
+
+.time__num {
+  font-size: clamp(32px, 4.5vw, 56px);
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+
+.record__void {
+  min-height: 40vh;
+  border: 1px solid var(--rule-soft);
+}
+
+.record__viewer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(72px, 1fr));
+  gap: 10px;
+  margin-top: 18px;
+  max-width: 640px;
+}
+
+.record__viewer button {
+  text-align: left;
+}
+
+.record__viewer img {
+  width: 100%;
+  mix-blend-mode: multiply;
+  opacity: 0.55;
+}
+
+.record__viewer button.is-on img {
+  opacity: 1;
+}
+
+.unreal__index {
+  margin-top: 96px;
+  padding-top: 48px;
   border-top: 1px solid var(--rule);
 }
 
@@ -707,7 +913,9 @@
   .unreal,
   .search,
   .people,
-  .mediums {
+  .mediums,
+  .time,
+  .year {
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -743,7 +951,9 @@
   }
 
   .search__hit,
-  .search__group {
+  .search__group,
+  .browse__row,
+  .time__year {
     grid-template-columns: 1fr;
   }
 

@@ -8,7 +8,7 @@
     "dev": "vite",
     "archive": "tsx scripts/scrape.ts",
     "scrape": "tsx scripts/scrape.ts",
-    "index": "tsx scripts/build-search-index.ts"
+    "index": "tsx scripts/build-indexes.ts"
   },
   "dependencies": {
     "@emotion/react": "11.14.0",

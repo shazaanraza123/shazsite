@@ -9,7 +9,13 @@ import { Fashion } from "./pages/Fashion";
 import { Unrealized } from "./pages/Unrealized";
 import { Connections } from "./pages/Connections";
 import { People } from "./pages/People";
+import { Person } from "./pages/Person";
 import { Medium } from "./pages/Medium";
+import { MediumSlug } from "./pages/MediumSlug";
+import { Time } from "./pages/Time";
+import { Year } from "./pages/Year";
+import { WorkIndexPage } from "./pages/Work";
+import { WorkSlug } from "./pages/WorkSlug";
 
 function Root() {
   return <Outlet />;
@@ -30,7 +36,14 @@ export const router = createBrowserRouter([
       { path: "unrealized", Component: Unrealized },
       { path: "connections", Component: Connections },
       { path: "people", Component: People },
+      { path: "people/:slug", Component: Person },
       { path: "medium", Component: Medium },
+      { path: "medium/:slug", Component: MediumSlug },
+      { path: "medium/:slug/:type", Component: MediumSlug },
+      { path: "time", Component: Time },
+      { path: "year/:year", Component: Year },
+      { path: "work", Component: WorkIndexPage },
+      { path: "work/:slug", Component: WorkSlug },
       { path: "search", Component: Root },
     ],
   },

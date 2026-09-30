@@ -12,7 +12,8 @@ export function Music() {
         Temporal axis as the source records it. DEMO → VERSION → RELEASE is a reading
         structure, not a claimed genealogy. The stills on this screen are Ye Tour catalog
         visualizers and live audio (2026). No demo-to-release chain is documented for them,
-        so none is drawn.
+        so none is drawn.{" "}
+        <Link to="/medium/music">Browse all music records →</Link>
       </p>
       <div className="music__axis">
         <span>Demo</span>

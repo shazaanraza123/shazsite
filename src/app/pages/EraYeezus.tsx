@@ -35,7 +35,10 @@ export function EraYeezus() {
       <h1 className="era__title">YEEZUS</h1>
       <p className="meta" style={{ maxWidth: 520, marginBottom: 48 }}>
         An environment, not a gallery. Images are only records whose source names Yeezus.
-        Disciplines sit in space around the released cover — not six equal modules.
+        Disciplines sit in space around the released cover — not six equal modules.{" "}
+        <Link to="/work/yeezus">All Yeezus records</Link>
+        {" · "}
+        <Link to="/year/2013">2013</Link>
       </p>
       <div className="era__env">
         {cover ? (
@@ -101,6 +104,10 @@ export function EraYeezus() {
             <li>
               <Link to="/music">Open the music axis →</Link>
               <div className="meta">Not a tracklist dump</div>
+            </li>
+            <li>
+              <Link to="/medium/music">Browse music records →</Link>
+              <div className="meta">Types as the source filed them</div>
             </li>
           </ul>
         </div>

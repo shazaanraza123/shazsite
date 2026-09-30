@@ -100,9 +100,14 @@ export function ArchiveField() {
         style={{ transform: `translate(${view.x}px, ${view.y}px) scale(${view.s})` }}
       >
         {YEAR_MARKS.map((m) => (
-          <div key={m.year} className="field__year" style={{ left: m.x, top: m.y }}>
+          <Link
+            key={m.year}
+            to={`/year/${m.year}`}
+            className="field__year"
+            style={{ left: m.x, top: m.y }}
+          >
             {m.year}
-          </div>
+          </Link>
         ))}
         {items.map((item, i) => {
           const spot = SPOTS[i] ?? { x: 100 + i * 80, y: 200, w: 180 };
