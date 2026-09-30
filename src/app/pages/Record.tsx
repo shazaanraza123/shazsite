@@ -98,8 +98,6 @@ export function RecordPage() {
     );
   }
 
-  const connected = found.related_records.filter(Boolean);
-
   return (
     <main className="record fade-in">
       <div className="record__media">
@@ -146,12 +144,6 @@ export function RecordPage() {
           <dd className="record__v">
             {isGlow ? (
               <Link to="/connections">Glow in the Dark graph</Link>
-            ) : connected.length ? (
-              connected.map((rid) => (
-                <div key={rid}>
-                  <Link to={`/record/${rid}`}>{rid}</Link>
-                </div>
-              ))
             ) : (
               "—"
             )}
@@ -182,12 +174,6 @@ export function RecordPage() {
                   <Link to={`/record/${item.record_id}`}>{item.record_title}</Link>
                 </div>
               ))
-            ) : connected.length ? (
-              connected.map((rid) => (
-                <div key={rid}>
-                  <Link to={`/record/${rid}`}>{rid}</Link>
-                </div>
-              ))
             ) : (
               "—"
             )}
@@ -196,7 +182,9 @@ export function RecordPage() {
         {found.source_claims.length ? (
           <div className="record__claims">
             <div className="meta meta-ink">Source claims — not silently merged</div>
-            {found.source_claims.map((c, i) => (
+            {found.source_claims
+              .filter((c) => c.field !== "headers")
+              .map((c, i) => (
               <div key={`${c.field}-${i}`} className="meta" style={{ marginTop: 8 }}>
                 {c.field}: {c.value} · {c.source_name} ·{" "}
                 <a href={c.source_url} target="_blank" rel="noreferrer">

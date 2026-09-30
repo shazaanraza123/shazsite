@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router";
 import { figmaScreen } from "@/lib/archive";
 import { LazyImg } from "../components/LazyImg";
-import { Provenance } from "../components/Meta";
 
 type Spot = { x: number; y: number; w: number };
 
@@ -117,13 +116,6 @@ export function ArchiveField() {
               <LazyImg src={item.src} alt={item.record_title} />
               <div className="field__cap meta">
                 {item.year ?? "—"} · {item.record_title}
-                <Provenance
-                  source={item.source_name}
-                  url={item.source_page}
-                  date={item.year}
-                  status={item.status}
-                  statusTerm={item.status_source_term}
-                />
               </div>
             </Link>
           );

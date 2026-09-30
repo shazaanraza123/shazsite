@@ -1,18 +1,18 @@
 import { Link } from "react-router";
-import { curated, figmaScreen } from "@/lib/archive";
+import { figmaScreen } from "@/lib/archive";
 import { LazyImg } from "../components/LazyImg";
-import { Provenance } from "../components/Meta";
 
 export function Music() {
   const stills = figmaScreen("05-music");
-  const { demo, version, release } = curated.music_axis;
 
   return (
     <main className="music fade-in">
       <h1 className="music__h">MUSIC</h1>
       <p className="meta" style={{ maxWidth: 640 }}>
-        Temporal axis as the source records it. DEMO → VERSION → RELEASE is a reading structure,
-        not a claimed genealogy. No version relationships are invented between these titles.
+        Temporal axis as the source records it. DEMO → VERSION → RELEASE is a reading
+        structure, not a claimed genealogy. The stills on this screen are Ye Tour catalog
+        visualizers and live audio (2026). No demo-to-release chain is documented for them,
+        so none is drawn.
       </p>
       <div className="music__axis">
         <span>Demo</span>
@@ -23,37 +23,21 @@ export function Music() {
       </div>
       <div className="music__cols">
         <section className="music__col">
-          <h2>Demo · source type stems / never recorded / beat only</h2>
-          {demo.slice(0, 16).map((row) => (
-            <Link key={row.id} to={`/record/${row.id}`} className="music__row">
-              <div>{row.title}</div>
-              <Provenance
-                source={row.source.name}
-                url={row.source.url}
-                date={row.date ?? row.year}
-                status={row.status}
-                statusTerm={row.status_source_term}
-              />
-            </Link>
-          ))}
+          <h2>Demo</h2>
+          <p className="meta">
+            No demo stills in the curated music export. Statuses such as BEAT ONLY / NEVER
+            RECORDED exist elsewhere in the index — they are not attached to these titles.
+          </p>
         </section>
         <section className="music__col">
-          <h2>Version · source type main / og file / partial</h2>
-          {version.slice(0, 16).map((row) => (
-            <Link key={row.id} to={`/record/${row.id}`} className="music__row">
-              <div>{row.title}</div>
-              <Provenance
-                source={row.source.name}
-                url={row.source.url}
-                date={row.date ?? row.year}
-                status={row.status}
-                statusTerm={row.status_source_term}
-              />
-            </Link>
-          ))}
+          <h2>Version</h2>
+          <p className="meta">
+            No version lineage is recorded between these catalog stills. Search the archive
+            for source terms such as OG FILE or PARTIAL.
+          </p>
         </section>
         <section className="music__col">
-          <h2>Release · documented released / realized stills</h2>
+          <h2>Release · Ye Tour catalog stills</h2>
           <div className="music__stills">
             {stills.map((item) => (
               <Link key={item.file} to={`/record/${item.record_id}`}>
@@ -66,18 +50,6 @@ export function Music() {
               </Link>
             ))}
           </div>
-          {release.slice(0, 8).map((row) => (
-            <Link key={row.id} to={`/record/${row.id}`} className="music__row">
-              <div>{row.title}</div>
-              <Provenance
-                source={row.source.name}
-                url={row.source.url}
-                date={row.date ?? row.year}
-                status={row.status}
-                statusTerm={row.status_source_term}
-              />
-            </Link>
-          ))}
         </section>
       </div>
     </main>

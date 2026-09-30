@@ -15,7 +15,6 @@ const SAT = [
 ];
 
 const DISC = [
-  { key: "MUSIC", left: "2%", top: "22%" },
   { key: "DESIGN", left: "58%", top: "6%" },
   { key: "FASHION", left: "82%", top: "48%" },
   { key: "PERFORMANCE", left: "36%", top: "72%" },
@@ -73,7 +72,9 @@ export function EraYeezus() {
         })}
 
         {DISC.map((d) => {
-          const rows = curated.yeezus_domains[d.key] ?? [];
+          const rows = (curated.yeezus_domains[d.key] ?? []).filter(
+            (r) => !/\.mp3|\.wav|ref \(/i.test(r.title) && r.type !== "tracklists" && r.type !== "stems" && r.type !== "main",
+          );
           return (
             <div key={d.key} className="era__disc" style={{ left: d.left, top: d.top }}>
               <div>{d.key}</div>
@@ -91,6 +92,15 @@ export function EraYeezus() {
             </div>
           );
         })}
+        <div className="era__disc" style={{ left: "2%", top: "22%" }}>
+          <div>MUSIC</div>
+          <ul className="era__list">
+            <li>
+              <Link to="/music">Open the music axis →</Link>
+              <div className="meta">Not a tracklist dump</div>
+            </li>
+          </ul>
+        </div>
       </div>
     </main>
   );
