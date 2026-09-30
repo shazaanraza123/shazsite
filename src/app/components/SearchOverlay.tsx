@@ -21,10 +21,12 @@ export function SearchOverlay() {
     setDraft(q);
   }, [q]);
 
+  const liveQ = draft.trim().length >= 2 ? draft.trim() : q.trim();
+
   const hits = useMemo(() => {
-    if (!index || !q.trim()) return [];
-    return index.filter((row) => matchHit(row, q));
-  }, [index, q]);
+    if (!index || !liveQ) return [];
+    return index.filter((row) => matchHit(row, liveQ));
+  }, [index, liveQ]);
 
   const filtered = useMemo(() => {
     return hits.filter((h) => {
@@ -76,10 +78,10 @@ export function SearchOverlay() {
       </form>
       <p className="meta" style={{ marginTop: 16 }}>
         Local index · {index ? `${index.length.toLocaleString()} records` : "loading"}
-        {q ? ` · ${filtered.length.toLocaleString()} match` : ""} · grouped by medium · never
-        more than {PER_GROUP} rows per domain
+        {liveQ ? ` · ${filtered.length.toLocaleString()} match` : " · type at least two letters"} · grouped by
+        medium · never more than {PER_GROUP} rows per domain
       </p>
-      {q && hits.length ? (
+      {liveQ && hits.length ? (
         <div className="browse__bar" style={{ marginTop: 28 }}>
           <label className="browse__f">
             <span>Domain</span>
@@ -118,7 +120,7 @@ export function SearchOverlay() {
       ) : null}
       {error ? <p className="meta">{error}</p> : null}
       <div className="search__groups">
-        {q && groups.length === 0 && index ? (
+        {liveQ && groups.length === 0 && index ? (
           <p className="meta">No records match this query.</p>
         ) : null}
         {groups.map(([gDomain, rows]) => {
