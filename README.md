@@ -1,21 +1,11 @@
-# YE ARCHIVE
 
-Connected digital archive of Ye’s documented creative work. This repository is the archive site, not a personal portfolio.
+  # Personal Portfolio Website
 
-## Site
+  This is a code bundle for Personal Portfolio Website. The original project is available at https://www.figma.com/design/1MJ6SkgkPZnl8d1sDMKRsD/Personal-Portfolio-Website.
 
-```bash
-npm install
-npm run index    # derive public/search-index.json from data/archive.json
-npm run dev
-```
+  ## Running the code
 
-Production: `npm run build`. Desktop-first ~1440px.
+  Run `npm i` to install the dependencies.
 
-Routes: `/` entry · `/archive` field · `/era/yeezus` · `/record/:id` · `/music` · `/fashion/regular-fit-ls-tee-h03` · `/unrealized` · `/connections` · `/search` (`/` key).
-
-Local images only (`public/archive/`, `figma-export/`). Search queries a slim index — it does not render 28k records at once.
-
-## Scrape (do not rerun unless asked)
-
-`npm run archive` audits robots.txt and crawls permitted public sources into `data/`, `public/archive/`, and `figma-export/`. See `SOURCES.md` and `FIGMA_IMAGE_GUIDE.md`.
+  Run `npm run dev` to start the development server.
+  
