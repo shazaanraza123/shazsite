@@ -351,8 +351,8 @@ export async function scrapeYzylibrary(): Promise<AdapterResult> {
       claim("visible_status_tag", term, SOURCE_NAME, url),
     ]);
     const images = Array.isArray(payload?.Images) ? payload.Images : [];
-    const highValue = /unreleased|prototype|sample|concept|yeezus/i.test(`${title} ${collectionName} ${status}`);
-    const maxDl = highValue ? 6 : 1;
+    // Product stills usually follow the IsPrimary catalog card (often a sketch/render).
+    const maxDl = 8;
     const sorted = [...images].sort((a, b) => Number(b.IsPrimary) - Number(a.IsPrimary) || (a.Position || 0) - (b.Position || 0));
     let idx = 0;
     for (const im of sorted) {

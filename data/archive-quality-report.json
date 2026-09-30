@@ -1,0 +1,1534 @@
+{
+  "generated_at": "2026-09-30T02:34:39.111Z",
+  "totals": {
+    "records": 28083,
+    "with_local_image": 5844,
+    "without_local_image": 22239,
+    "with_people": 410,
+    "with_project": 28078,
+    "with_era": 26832,
+    "with_date": 18006,
+    "with_year": 22811,
+    "with_description": 26111,
+    "missing_or_unknown_domain": 0,
+    "missing_title": 0,
+    "malformed_people_records": 0,
+    "duplicate_title_groups": 80
+  },
+  "by_domain": {
+    "MUSIC": 14326,
+    "EPHEMERA": 7607,
+    "FASHION": 4861,
+    "DESIGN": 718,
+    "FILM": 192,
+    "PHOTOGRAPHY": 153,
+    "PERFORMANCE": 132,
+    "OBJECTS": 68,
+    "WRITING": 26
+  },
+  "by_year": {
+    "1915": 1,
+    "1949": 1,
+    "1950": 4,
+    "1965": 1,
+    "1970": 2,
+    "1971": 1,
+    "1976": 2,
+    "1977": 1,
+    "1979": 1,
+    "1980": 4,
+    "1986": 1,
+    "1988": 1,
+    "1989": 2,
+    "1990": 12,
+    "1993": 2,
+    "1994": 1,
+    "1995": 16,
+    "1996": 13,
+    "1997": 17,
+    "1998": 5,
+    "1999": 46,
+    "2000": 13,
+    "2001": 49,
+    "2002": 69,
+    "2003": 79,
+    "2004": 139,
+    "2005": 117,
+    "2006": 68,
+    "2007": 162,
+    "2008": 200,
+    "2009": 108,
+    "2010": 352,
+    "2011": 281,
+    "2012": 232,
+    "2013": 597,
+    "2014": 600,
+    "2015": 737,
+    "2016": 1203,
+    "2017": 320,
+    "2018": 1497,
+    "2019": 1998,
+    "2020": 2161,
+    "2021": 1830,
+    "2022": 2593,
+    "2023": 1697,
+    "2024": 1968,
+    "2025": 2134,
+    "2026": 1473,
+    "(none)": 5272
+  },
+  "by_status": {
+    "OG FILE": 7508,
+    "UNCONFIRMED": 5580,
+    "PARTIAL": 4154,
+    "CONFIRMED": 2673,
+    "FULL": 2565,
+    "RELEASED": 1151,
+    "RUMORED": 1147,
+    "UNRELEASED": 809,
+    "STEM BOUNCE": 634,
+    "PROTOTYPE": 351,
+    "BEAT ONLY": 327,
+    "SAMPLE": 306,
+    "REALIZED": 205,
+    "NEVER RECORDED": 181,
+    "REFERENCE": 151,
+    "NOT AVAILABLE": 99,
+    "TAGGED": 87,
+    "FULL CDQ": 84,
+    "FULL HQ": 38,
+    "FULL LOSSLESS": 9,
+    "CONFLICTING SOURCES": 7,
+    "FULL LQ": 4,
+    "PARTIAL HQ": 3,
+    "LOST": 3,
+    "RECORDING": 2,
+    "FULL HQ (TAGGED)": 1,
+    "FULL CDQ (TAGGED)": 1,
+    "PARTIAL LQ": 1,
+    "CONCEPT": 1,
+    "CANCELLED": 1
+  },
+  "by_source": {
+    "Ye Tracker": 22951,
+    "Yeezy Archive": 2181,
+    "YZY Library": 1633,
+    "Paris Saint": 1097,
+    "Ye Tour": 221
+  },
+  "by_type": {
+    "main": 9701,
+    "recent": 5837,
+    "garment": 2462,
+    "stems": 1772,
+    "released": 1460,
+    "merch": 1352,
+    "product": 991,
+    "misc": 766,
+    "art": 717,
+    "tracklists": 439,
+    "samples": 402,
+    "special": 388,
+    "groupbuys": 335,
+    "fakes": 302,
+    "copies": 230,
+    "best": 157,
+    "lookbook": 153,
+    "ssc": 139,
+    "grails": 115,
+    "worst": 86,
+    "Collectibles": 68,
+    "shared": 62,
+    "era": 43,
+    "live": 29,
+    "Footwear": 29,
+    "collection": 14,
+    "visualizer": 11,
+    "video": 8,
+    "audio": 6,
+    "Tops": 4,
+    "Bottoms": 2,
+    "Sweater": 2,
+    "ShipWill": 1
+  },
+  "by_subtype": {
+    "2024": 14,
+    "CD Quality": 6648,
+    "Lossless": 3850,
+    "Not Available": 3772,
+    "(empty)": 2549,
+    "High Quality": 2311,
+    "Recording": 1553,
+    "Merch": 1052,
+    "Digital": 590,
+    "Yeezy Season": 557,
+    "Adidas Yeezy": 357,
+    "Clear": 319,
+    "Low Quality": 292,
+    "Season X": 283,
+    "Other": 254,
+    "lookbook": 153,
+    "Tops": 150,
+    "YZY GAP Engineered by Balenciaga": 143,
+    "Season 9": 142,
+    "Bully": 134,
+    "YZY GAP": 132,
+    "SZN X / 2026 Tour": 130,
+    "Sweaters": 127,
+    "Music Video": 125,
+    "Accessories": 122,
+    "Season 8": 118,
+    "YZY Free / Post-Season 9": 110,
+    "Season 6": 109,
+    "Live Performance": 92,
+    "Jesus Is King Archive (2019-2021)": 90,
+    "Bottoms": 83,
+    "SZN X": 82,
+    "Instrumental": 78,
+    "Outerwear": 74,
+    "The Life Of Pablo Archive (2016)": 73,
+    "Season 5": 70,
+    "Blocked": 68,
+    "Vultures": 66,
+    "Scan": 64,
+    "Season 1": 61,
+    "Film": 59,
+    "Season 4": 58,
+    "Collectibles": 57,
+    "Promo": 46,
+    "Photo": 44,
+    "All Yeezy (2013-2026)": 44,
+    "main": 43,
+    "Miscellaneous Album Merch (2008-2015)": 41,
+    "Donda, Vultures & Bully Archives 2021-2026": 40,
+    "Yeezy Gap Engineered By Balenciaga (2021-2022)": 35,
+    "Blurry": 29,
+    "Yeezus Archive (2013-2015)": 29,
+    "All Vintage & Other Designers": 29,
+    "Dropout Trilogy Archive (2004-2007)": 25,
+    "Footwear": 24,
+    "N/A": 23,
+    "Interview": 22,
+    "sofi": 20,
+    "alamodome": 19,
+    "Free Hoover Concert": 19,
+    "cdmx": 18,
+    "High-Res": 18,
+    "All Eras (2005-2026)": 17,
+    "1080P · 30FPS": 16,
+    "Freestyle": 14,
+    "Remix": 14,
+    "Livestream": 14,
+    "library-collection": 14,
+    "1080P · 23.98FPS": 13,
+    "soldierfield": 13,
+    "Season 2": 13,
+    "gelredome": 12,
+    "Recreation": 12,
+    "Sunday Service": 11,
+    "tampa": 10,
+    "Yeezy Season 1-3 (2015-2016)": 10,
+    "1080P · 24FPS": 9,
+    "Low-Res": 9,
+    "vultures": 8,
+    "neworleans": 8
+  },
+  "by_era_top": {
+    "DONDA 2 [V1]": 2203,
+    "God's Country": 1412,
+    "DONDA [V1]": 1360,
+    "(empty)": 1251,
+    "Donda [V3]": 1208,
+    "JESUS IS KING": 948,
+    "VULTURES 2": 885,
+    "Yeezus": 869,
+    "Yandhi [V2]": 855,
+    "Yandhi [V1]": 852,
+    "Donda [V2]": 796,
+    "CUCK": 744,
+    "Good Ass Job": 741,
+    "Yeezus 2": 741,
+    "VULTURES 1": 720,
+    "¥$": 627,
+    "Hitler": 573,
+    "The College Dropout": 489,
+    "So Help Me God": 471,
+    "Before The College Dropout": 469,
+    "The Life Of Pablo": 443,
+    "Seasons 3–6 (2016–2019)": 428,
+    "SWISH": 427,
+    "YEBU": 427,
+    "BULLY [V1]": 420,
+    "Graduation": 419,
+    "IN A PERFECT WORLD": 387,
+    "808s & Heartbreak": 379,
+    "Late Registration": 369,
+    "Adidas Yeezy (2019–2022)": 357,
+    "BULLY [V2]": 307,
+    "My Beautiful Dark Twisted Fantasy": 285,
+    "Season X": 283,
+    "Turbo Grafx 16": 254,
+    "Watch The Throne": 250,
+    "ye": 225,
+    "DONDA 2 [V2]": 211,
+    "KIDS SEE GHOSTS": 194,
+    "Ye Tour 2026": 168,
+    "WAR": 160,
+    "Cruel Summer": 146,
+    "YZY GAP Engineered by Balenciaga": 143,
+    "Season 9": 142,
+    "Yeezus Archive (2013-2015)": 139,
+    "JESUS IS KING: The Dr. Dre Version": 136,
+    "Bully": 134,
+    "YZY GAP": 132,
+    "Good Ass Job (2018)": 130,
+    "Yeezy Gap Engineered By Balenciaga (2021-2022)": 130,
+    "2026 Tour": 130,
+    "Seasons 1–2 (2015–2016)": 129,
+    "The Life Of Pablo Archive (2016)": 121,
+    "Season 8": 118,
+    "Jesus Is King Archive (2019-2021)": 117,
+    "YZY Free / Post-Season 9": 110,
+    "Season 6": 109,
+    "Yeezy Season 4-5 (2016-2017)": 91,
+    "Vultures": 88,
+    "Yeezy Season 6-7 (2017-2018)": 84,
+    "SZN X": 82
+  },
+  "by_project_top": {
+    "DONDA 2 [V1]": 2203,
+    "God's Country": 1412,
+    "DONDA [V1]": 1360,
+    "Donda [V3]": 1208,
+    "Merch": 1048,
+    "JESUS IS KING": 948,
+    "VULTURES 2": 885,
+    "Yeezus": 869,
+    "Yandhi [V2]": 855,
+    "Yandhi [V1]": 852,
+    "Donda [V2]": 796,
+    "CUCK": 744,
+    "Good Ass Job": 741,
+    "Yeezus 2": 741,
+    "VULTURES 1": 720,
+    "¥$": 627,
+    "Hitler": 573,
+    "Yeezy Season": 557,
+    "The College Dropout": 489,
+    "So Help Me God": 471,
+    "Before The College Dropout": 469,
+    "The Life Of Pablo": 443,
+    "SWISH": 427,
+    "YEBU": 427,
+    "BULLY [V1]": 420,
+    "Graduation": 419,
+    "IN A PERFECT WORLD": 387,
+    "808s & Heartbreak": 379,
+    "Late Registration": 369,
+    "Adidas Yeezy": 357,
+    "BULLY [V2]": 307,
+    "My Beautiful Dark Twisted Fantasy": 285,
+    "Season X": 283,
+    "Turbo Grafx 16": 254,
+    "Watch The Throne": 250,
+    "ye": 225,
+    "DONDA 2 [V2]": 211,
+    "KIDS SEE GHOSTS": 194,
+    "Ye Tour 2026": 168,
+    "WAR": 160,
+    "Tops": 150,
+    "Cruel Summer": 146,
+    "YZY GAP Engineered by Balenciaga": 143,
+    "Season 9": 142,
+    "JESUS IS KING: The Dr. Dre Version": 136,
+    "Bully": 134,
+    "YZY GAP": 132,
+    "Good Ass Job (2018)": 130,
+    "SZN X / 2026 Tour": 130,
+    "Sweaters": 127,
+    "Accessories": 122,
+    "Season 8": 118,
+    "YZY Free / Post-Season 9": 110,
+    "Season 6": 109,
+    "Jesus Is King Archive (2019-2021)": 90,
+    "Bottoms": 83,
+    "SZN X": 82,
+    "VULTURES 3": 75,
+    "Outerwear": 74,
+    "The Life Of Pablo Archive (2016)": 73,
+    "Season 5": 70,
+    "Vultures": 66,
+    "Season 1": 61,
+    "Season 4": 58,
+    "Cruel Winter [V2]": 57,
+    "Collectibles": 57,
+    "Cruel Winter [V1]": 45,
+    "All Yeezy (2013-2026)": 44,
+    "Ongoing": 42,
+    "Multi-Era": 41,
+    "Miscellaneous Album Merch (2008-2015)": 41,
+    "Donda, Vultures & Bully Archives 2021-2026": 40,
+    "Yeezy Gap Engineered By Balenciaga (2021-2022)": 35,
+    "DAYTONA": 34,
+    "Yeezus Archive (2013-2015)": 29,
+    "All Vintage & Other Designers": 29,
+    "Yeezy YZY GAP Engineered by Balenciaga Archive": 29,
+    "Yeezy Vultures Archive": 29,
+    "Yeezy Bully Archive": 29,
+    "Jesus Is Born": 28
+  },
+  "supported_mediums": [
+    {
+      "domain": "FASHION",
+      "count": 4861,
+      "types": {
+        "garment": 2462,
+        "merch": 1352,
+        "product": 991,
+        "Footwear": 29,
+        "collection": 14,
+        "misc": 4,
+        "Tops": 4,
+        "Bottoms": 2,
+        "Sweater": 2,
+        "ShipWill": 1
+      }
+    },
+    {
+      "domain": "PERFORMANCE",
+      "count": 132,
+      "types": {
+        "misc": 92,
+        "live": 29,
+        "visualizer": 11
+      }
+    },
+    {
+      "domain": "FILM",
+      "count": 192,
+      "types": {
+        "misc": 184,
+        "video": 8
+      }
+    },
+    {
+      "domain": "MUSIC",
+      "count": 14326,
+      "types": {
+        "main": 9701,
+        "stems": 1772,
+        "released": 1460,
+        "tracklists": 439,
+        "samples": 402,
+        "special": 388,
+        "grails": 115,
+        "era": 43,
+        "audio": 6
+      }
+    },
+    {
+      "domain": "DESIGN",
+      "count": 718,
+      "types": {
+        "art": 717,
+        "misc": 1
+      }
+    },
+    {
+      "domain": "EPHEMERA",
+      "count": 7607,
+      "types": {
+        "recent": 5837,
+        "misc": 459,
+        "groupbuys": 335,
+        "fakes": 302,
+        "copies": 230,
+        "best": 157,
+        "ssc": 139,
+        "worst": 86,
+        "shared": 62
+      }
+    },
+    {
+      "domain": "WRITING",
+      "count": 26,
+      "types": {
+        "misc": 26
+      }
+    },
+    {
+      "domain": "OBJECTS",
+      "count": 68,
+      "types": {
+        "Collectibles": 68
+      }
+    },
+    {
+      "domain": "PHOTOGRAPHY",
+      "count": 153,
+      "types": {
+        "lookbook": 153
+      }
+    }
+  ],
+  "duplicate_titles_top": [
+    {
+      "title": "???",
+      "count": 430,
+      "sample_ids": [
+        "yetracker-b4215f3b41d7ad8f",
+        "yetracker-ba147fe55f7eb7b0",
+        "yetracker-4bbc9db99c6e896c",
+        "yetracker-efaaf70a6cb004a7",
+        "yetracker-7f7fe19442271371",
+        "yetracker-6549c51e4a18e030"
+      ]
+    },
+    {
+      "title": "donda",
+      "count": 113,
+      "sample_ids": [
+        "yetracker-aba144238be5f156",
+        "yetracker-4cb9952d449273fb",
+        "yetracker-1a707755e657f12f",
+        "yetracker-cd7a7219e0c766a4",
+        "yetracker-14b08f0795370ba9",
+        "yetracker-f4e34353fe6859a7"
+      ]
+    },
+    {
+      "title": "??? [v1]",
+      "count": 92,
+      "sample_ids": [
+        "yetracker-32e95ddfbdd91fcf",
+        "yetracker-5e7da0ae8188326e",
+        "yetracker-d02efbccee57d6f4",
+        "yetracker-caa9ef920d15383f",
+        "yetracker-99d8d02a06d939de",
+        "yetracker-a162702f70545b6b"
+      ]
+    },
+    {
+      "title": "yeezy boost 350 v2",
+      "count": 73,
+      "sample_ids": [
+        "yeezyarchive-54a585a0b963e841",
+        "yeezyarchive-d041d45f53f78450",
+        "yeezyarchive-947a1e3da744210d",
+        "yeezyarchive-e550581d9e55a8ab",
+        "yeezyarchive-8b5e26cd1f44bc05",
+        "yeezyarchive-04309d5e002d8689"
+      ]
+    },
+    {
+      "title": "jesus is lord",
+      "count": 51,
+      "sample_ids": [
+        "yetracker-c877f0c7b2360bf6",
+        "yetracker-3bdd8b1f0bc66c50",
+        "yetracker-0efd10363f3bc14d",
+        "yetracker-29c854d4999795eb",
+        "yetracker-65844b675442d460",
+        "yetracker-d2bee8e80b28b915"
+      ]
+    },
+    {
+      "title": "??? [v2]",
+      "count": 46,
+      "sample_ids": [
+        "yetracker-771715228d7de97e",
+        "yetracker-3c76b0a1cb8abb2f",
+        "yetracker-718929d73111f79a",
+        "yetracker-c187271ad24f4655",
+        "yetracker-e3ced06c5108d2f1",
+        "yetracker-a1da9f5e6cc68825"
+      ]
+    },
+    {
+      "title": "donda 2",
+      "count": 43,
+      "sample_ids": [
+        "yetracker-3924003695efa167",
+        "yetracker-06853c24880a50fb",
+        "yetracker-1ddfce2838cadecd",
+        "yetracker-66ce3dc1cf7d4e69",
+        "yetracker-0360ec0d6f255f0a",
+        "yetracker-a6805e1fdac28ad1"
+      ]
+    },
+    {
+      "title": "¥$",
+      "count": 27,
+      "sample_ids": [
+        "yetracker-a8b80b03d69081a9",
+        "yetracker-e0b5329e2bf9ef4a",
+        "yetracker-ff570d04ec6ffa22",
+        "yetracker-585fd28c9b913d2a",
+        "yetracker-67d25073e83b434b",
+        "yetracker-e0d14df6386863ac"
+      ]
+    },
+    {
+      "title": "hurricane",
+      "count": 25,
+      "sample_ids": [
+        "yetracker-a5899e7dd1ec77c7",
+        "yetracker-0f943a0c244a4d18",
+        "yetracker-e08bef891d6acf42",
+        "yetracker-dd3b016f4e695fc4",
+        "yetracker-21f18dd654e8e746",
+        "yetracker-4c612c31424c3cf1"
+      ]
+    },
+    {
+      "title": "bully",
+      "count": 24,
+      "sample_ids": [
+        "yetour-0764697cb23d6ccd",
+        "yetracker-e9690a1ce4c54bef",
+        "yetracker-fc801571f3a2f64e",
+        "yetracker-39561fd4e1c13d50",
+        "yetracker-3586eaee01e3fb01",
+        "yetracker-f56ed811f47436be"
+      ]
+    },
+    {
+      "title": "jesus is king",
+      "count": 24,
+      "sample_ids": [
+        "yetracker-f0b278c46a2560f2",
+        "yetracker-e207eabe83d2580d",
+        "yetracker-85b65d1bf55e03e2",
+        "yetracker-db1fa66cd063d058",
+        "yetracker-4e5af648ded40ec4",
+        "yetracker-23b33f5fd6e8d7e5"
+      ]
+    },
+    {
+      "title": "god's country",
+      "count": 22,
+      "sample_ids": [
+        "yetracker-e141e295c167224b",
+        "yetracker-23e2cc9d00627d7b",
+        "yetracker-d6dfa502abe1a359",
+        "yetracker-9ed35756991e6b3b",
+        "yetracker-517f3a6948d554f2",
+        "yetracker-b3855a931c009f67"
+      ]
+    },
+    {
+      "title": "ts 07",
+      "count": 21,
+      "sample_ids": [
+        "yeezyarchive-67a059d62308c3f7",
+        "yeezyarchive-0676bb2728fc898b",
+        "yeezyarchive-d91794d829d96b5e",
+        "yeezyarchive-0b404fb9747545ea",
+        "yeezyarchive-87413e6c13680e39",
+        "yeezyarchive-d6d522ee4eefe988"
+      ]
+    },
+    {
+      "title": "we did it kid",
+      "count": 19,
+      "sample_ids": [
+        "yetracker-2ee2186374796655",
+        "yetracker-54e8c36066846879",
+        "yetracker-60611b32e3fe284d",
+        "yetracker-ad1db3ca971ca8eb",
+        "yetracker-55ac1f5fcb066dcd",
+        "yetracker-33247ae92eebfd6f"
+      ]
+    },
+    {
+      "title": "24",
+      "count": 18,
+      "sample_ids": [
+        "yetracker-df2d8964a0c4f45c",
+        "yetracker-4598dbab2291e865",
+        "yetracker-60829cc28a1343ad",
+        "yetracker-377e0f6cfd1d55fe",
+        "yetracker-e4dc47196ccd4041",
+        "yetracker-b31eaf30870cb09d"
+      ]
+    },
+    {
+      "title": "yeezy boost 700",
+      "count": 17,
+      "sample_ids": [
+        "yeezyarchive-04761b6eafb260f4",
+        "yeezyarchive-550e32dd8a7f38cc",
+        "yeezyarchive-5eb97517309eb3fe",
+        "yeezyarchive-f95157196e6dcc9b",
+        "yeezyarchive-ee5b4cd58cb9f566",
+        "yeezyarchive-de3b13fe17cf7e83"
+      ]
+    },
+    {
+      "title": "yeezy boost 350 v2 kids",
+      "count": 17,
+      "sample_ids": [
+        "yeezyarchive-06f5903155f3c2d8",
+        "yeezyarchive-5d21bbcfbce4e674",
+        "yeezyarchive-077335eba53e741d",
+        "yeezyarchive-8b84412f0c25a072",
+        "yeezyarchive-21b1c99df4c86f43",
+        "yeezyarchive-c24b50dd758eb445"
+      ]
+    },
+    {
+      "title": "mask ts 07",
+      "count": 17,
+      "sample_ids": [
+        "yeezyarchive-c64a85fa43953f97",
+        "yeezyarchive-43af993ad4eca4ae",
+        "yeezyarchive-2596d6a70f3931ef",
+        "yeezyarchive-c7ef309a16d936d6",
+        "yeezyarchive-bdd3690070cc382a",
+        "yeezyarchive-d759a24afc8fca0c"
+      ]
+    },
+    {
+      "title": "yandhi",
+      "count": 16,
+      "sample_ids": [
+        "yetracker-59e01a08b9eb4d51",
+        "yetracker-550c5e73ee4b80dc",
+        "yetracker-c8c0d0a98f5f08b1",
+        "yetracker-0f1d127fe67d0bf6",
+        "yetracker-dd2d8761b990108f",
+        "yetracker-84ec4d068ecb6640"
+      ]
+    },
+    {
+      "title": "jesus walks",
+      "count": 16,
+      "sample_ids": [
+        "yetracker-dc19ff18686d86cf",
+        "yetracker-949d7b66eea662f0",
+        "yetracker-b7fe74392aa50539",
+        "yetracker-5f62076d235e020e",
+        "yetracker-1513b74973ec8d5b",
+        "yetracker-218333af87eeeaa8"
+      ]
+    },
+    {
+      "title": "lord i need you",
+      "count": 16,
+      "sample_ids": [
+        "yetracker-b22da02b40eaef00",
+        "yetracker-7369f95b1197d9a2",
+        "yetracker-050d7a778de36193",
+        "yetracker-b7b69d2e2c2d00ab",
+        "yetracker-1cb08bb60d6e5f3d",
+        "yetracker-7c8a88bace7da4bd"
+      ]
+    },
+    {
+      "title": "yeezy boost 380",
+      "count": 16,
+      "sample_ids": [
+        "yeezyarchive-47c91b938d0a3b1f",
+        "yeezyarchive-44b99cb11fe8fd16",
+        "yeezyarchive-d4021aa1d5291c00",
+        "yeezyarchive-40bbcd7cb07861cf",
+        "yeezyarchive-2ef3d5816f9c45ae",
+        "yeezyarchive-0ea06d68e759d044"
+      ]
+    },
+    {
+      "title": "good ass job",
+      "count": 15,
+      "sample_ids": [
+        "yetracker-03e20f79003885c0",
+        "yetracker-b29ab650cb869065",
+        "yetracker-22a006070c6728e1",
+        "yetracker-5e57169916c44075",
+        "yetracker-eee5f9e9840e4170",
+        "yetracker-45da68cd304be6cc"
+      ]
+    },
+    {
+      "title": "wolves",
+      "count": 15,
+      "sample_ids": [
+        "yetracker-f2f06b96811257e2",
+        "yetracker-87a43a9676a8fc9a",
+        "yetracker-83f40005c5d2d657",
+        "yetracker-ac199b20534451fb",
+        "yetracker-eb99c4d525ccd851",
+        "yetracker-10fde3b8d6f2dbfe"
+      ]
+    },
+    {
+      "title": "fml",
+      "count": 15,
+      "sample_ids": [
+        "yetracker-b312da159c6db1de",
+        "yetracker-4fde9ff0596b064c",
+        "yetracker-657b11a9b7a84af8",
+        "yetracker-b7457916a6a734d3",
+        "yetracker-b2ac53fc4ea36e99",
+        "yetracker-55b373408a05e35d"
+      ]
+    },
+    {
+      "title": "fighting fires",
+      "count": 15,
+      "sample_ids": [
+        "yetracker-0fa8556f68f63a29",
+        "yetracker-543093f40d1f4086",
+        "yetracker-dba25eacae9949c1",
+        "yetracker-9210e39c61fefa5e",
+        "yetracker-b9d6bad7242d978d",
+        "yetracker-6ccd2f646d0d9c6a"
+      ]
+    },
+    {
+      "title": "praise god",
+      "count": 15,
+      "sample_ids": [
+        "yetracker-1eda851905b01ce7",
+        "yetracker-bd8e041ac1684dc5",
+        "yetracker-1b0c0dde0333749f",
+        "yetracker-54301c55bea65605",
+        "yetracker-fcb6ac2d9c3549ce",
+        "yetracker-1560d10ed7294c11"
+      ]
+    },
+    {
+      "title": "yeezy 500",
+      "count": 15,
+      "sample_ids": [
+        "yeezyarchive-623f1578d5354290",
+        "yeezyarchive-9429768a866af64c",
+        "yeezyarchive-96c900373c255a3d",
+        "yeezyarchive-fda0cd3761891629",
+        "yeezyarchive-0e3d9159561ad16c",
+        "yeezyarchive-c0575219c426f032"
+      ]
+    },
+    {
+      "title": "yeezus 2",
+      "count": 14,
+      "sample_ids": [
+        "yetracker-b9ac8d9317d32fb8",
+        "yetracker-9e82031ac6858a0c",
+        "yetracker-b6c415ab4fe0e4a4",
+        "yetracker-a59c0bcd40228cf6",
+        "yetracker-3c6de1ce97a87dc4",
+        "yetracker-5b3e5d04726f1a7b"
+      ]
+    },
+    {
+      "title": "yeezy foam runner",
+      "count": 14,
+      "sample_ids": [
+        "yeezyarchive-fe0e039387c566a8",
+        "yeezyarchive-b4a0f917791f4034",
+        "yeezyarchive-adfd75de3a8092d2",
+        "yeezyarchive-ce5aa89a8b000017",
+        "yeezyarchive-509dd1c8234516e1",
+        "yeezyarchive-0833612547792ffc"
+      ]
+    },
+    {
+      "title": "the college dropout",
+      "count": 13,
+      "sample_ids": [
+        "yetracker-58aad308f8b57378",
+        "yetracker-7981fa189a1975a7",
+        "yetracker-76d9bc069311c6c8",
+        "yetracker-e6e1de40a5b24795",
+        "yetracker-41bc5827551594c9",
+        "yetracker-c42cb15200b55ae8"
+      ]
+    },
+    {
+      "title": "vultures 2",
+      "count": 13,
+      "sample_ids": [
+        "yetracker-b5d620561d41b803",
+        "yetracker-7645976f964faf3f",
+        "yetracker-2827a20754fcfde8",
+        "yetracker-05d32f6007742ccd",
+        "yetracker-289db92f97e5b283",
+        "yetracker-8162d423ee004fdc"
+      ]
+    },
+    {
+      "title": "cuck",
+      "count": 13,
+      "sample_ids": [
+        "yetracker-fbc575d6b993fd3b",
+        "yetracker-92d188d36c129e2e",
+        "yetracker-3dec2fee4d8b9838",
+        "yetracker-f896fbd10555dbe1",
+        "yetracker-1e642e1393502832",
+        "yetracker-ecf825fdd477c524"
+      ]
+    },
+    {
+      "title": "talib kweli - ???",
+      "count": 13,
+      "sample_ids": [
+        "yetracker-b5d32cb7e2dd76d8",
+        "yetracker-dedbbb1ceddba03a",
+        "yetracker-14f85bbdb2194ba6",
+        "yetracker-adda6c3843788b2e",
+        "yetracker-0086fe2b976854c1",
+        "yetracker-ed891eee0b4fcd48"
+      ]
+    },
+    {
+      "title": "i love it",
+      "count": 13,
+      "sample_ids": [
+        "yetracker-3790ff59938b06fe",
+        "yetracker-5db9e90bc9206db1",
+        "yetracker-18fea75714dae541",
+        "yetracker-7f769a6cc553b2b8",
+        "yetracker-ecd661f482b37744",
+        "yetracker-160708821f3d5cfe"
+      ]
+    },
+    {
+      "title": "beat 5",
+      "count": 13,
+      "sample_ids": [
+        "yetracker-970f6cc4a7050b6a",
+        "yetracker-0b9b3bb56fac11a0",
+        "yetracker-1511d3bcb0b20afb",
+        "yetracker-0dcf23ef8bc3ae67",
+        "yetracker-acdc67bed2c4cc3f",
+        "yetracker-587e22ef90a2a778"
+      ]
+    },
+    {
+      "title": "future sounds",
+      "count": 13,
+      "sample_ids": [
+        "yetracker-048af0b7967c99f0",
+        "yetracker-f06aec92749429b8",
+        "yetracker-8eb9af1b92a96617",
+        "yetracker-56a9138cb3f28ac3",
+        "yetracker-09b27963079f2e77",
+        "yetracker-a65f2f4daf5b26e9"
+      ]
+    },
+    {
+      "title": "big sean - blessings [extended version]",
+      "count": 13,
+      "sample_ids": [
+        "yetracker-c4b208fcbec50fc9",
+        "yetracker-54e55239b901a687",
+        "yetracker-92ffda881437b837",
+        "yetracker-73858dd00cd2aa0e",
+        "yetracker-3bf7cd9b5adda25f",
+        "yetracker-4f41d20a80e1c32c"
+      ]
+    },
+    {
+      "title": "maintenance",
+      "count": 13,
+      "sample_ids": [
+        "yetracker-d63a4288c405aca3",
+        "yetracker-ef26fa6ed8375d28",
+        "yetracker-165a5bf833c6283e",
+        "yetracker-21bc2723e853991e",
+        "yetracker-70f9ede4c4c2d9bc",
+        "yetracker-4dc4daacc05d65bd"
+      ]
+    },
+    {
+      "title": "yeezy boost 350 v2 infant",
+      "count": 13,
+      "sample_ids": [
+        "yeezyarchive-202323e2942beec0",
+        "yeezyarchive-ba818623fbe0170b",
+        "yeezyarchive-97094c9f85d8687f",
+        "yeezyarchive-37683f458f2ff858",
+        "yeezyarchive-715f70c6e9102625",
+        "yeezyarchive-964e1ba17d22a48d"
+      ]
+    },
+    {
+      "title": "i am a god",
+      "count": 12,
+      "sample_ids": [
+        "yetracker-67ae09c1655dfb08",
+        "yetracker-1381560730a8c7f5",
+        "yetracker-5f5423ed1974cc25",
+        "yetracker-be62741a195e0c89",
+        "yetracker-d64f3586721ceb53",
+        "yetracker-2da66462e20bb60c"
+      ]
+    },
+    {
+      "title": "selah",
+      "count": 12,
+      "sample_ids": [
+        "yetracker-8694e8e812d88117",
+        "yetracker-1e00778af693c0f3",
+        "yetracker-9bc5910c7b1a40b7",
+        "yetracker-dd998f1a6df1c955",
+        "yetracker-b354de377f13ffae",
+        "yetracker-9e46da4574dd0da6"
+      ]
+    },
+    {
+      "title": "fuck flowers",
+      "count": 12,
+      "sample_ids": [
+        "yetracker-bcb36a0cc024490b",
+        "yetracker-3f632198cc1e5d4f",
+        "yetracker-38a3e957994cf637",
+        "yetracker-0ff0421a590468f9",
+        "yetracker-fc5e8e9a9cf9c760",
+        "yetracker-0176dad890c4db80"
+      ]
+    },
+    {
+      "title": "yeezus",
+      "count": 11,
+      "sample_ids": [
+        "yetracker-f73bd06a80d43c9a",
+        "yetracker-672fe9e5188f8fd4",
+        "yetracker-66fba03245d5b406",
+        "yetracker-1141163461eb0509",
+        "yetracker-6bd0831bb889ef86",
+        "yetracker-b4195c12ddc2464c"
+      ]
+    },
+    {
+      "title": "fade",
+      "count": 11,
+      "sample_ids": [
+        "yetracker-6f32eeebf3b4e957",
+        "yetracker-39401c3ed11d1a45",
+        "yetracker-22e210ff76477c88",
+        "yetracker-52bfa3ae59378dc2",
+        "yetracker-c20932d6943116f3",
+        "yetracker-9ec3bdf88c17e7b0"
+      ]
+    },
+    {
+      "title": "ww3",
+      "count": 11,
+      "sample_ids": [
+        "yetracker-d6681571759a6f11",
+        "yetracker-4bd332a7d656e5ed",
+        "yetracker-d5be9066a89bad7a",
+        "yetracker-7b12e6c5a05e89e6",
+        "yetracker-c2e2008376befff4",
+        "yetracker-378508af5337ab7a"
+      ]
+    },
+    {
+      "title": "off the grid",
+      "count": 11,
+      "sample_ids": [
+        "yetracker-33dd0e6d5fc6d4b6",
+        "yetracker-4f01f78389469807",
+        "yetracker-ea3d88c85c8d922b",
+        "yetracker-2d83d2c05b5857ce",
+        "yetracker-6d0d7203a70c5cd5",
+        "yetracker-c5d796819c69fda4"
+      ]
+    },
+    {
+      "title": "530",
+      "count": 11,
+      "sample_ids": [
+        "yetracker-189ede8ed27c5300",
+        "yetracker-9cfe3dd6db133831",
+        "yetracker-8c555f40c2c8f79e",
+        "yetracker-d671cf44bc026f65",
+        "yetracker-e63083d9680ec1fc",
+        "yetracker-5104151b7d51d050"
+      ]
+    },
+    {
+      "title": "beat 2",
+      "count": 11,
+      "sample_ids": [
+        "yetracker-28741e4ced1f44c4",
+        "yetracker-ec121f7541b1d2f0",
+        "yetracker-22c79857653d0fb7",
+        "yetracker-7a15ba377b85809c",
+        "yetracker-6d53189b8166fdcc",
+        "yetracker-0dd7fc52b83937e8"
+      ]
+    },
+    {
+      "title": "beat 4",
+      "count": 11,
+      "sample_ids": [
+        "yetracker-6efd752d01404415",
+        "yetracker-3e40e53cc23e55f1",
+        "yetracker-295b00aacbbbdb0e",
+        "yetracker-0471c7648bd543b7",
+        "yetracker-45c96c9dd305ad83",
+        "yetracker-7d9368e598fcf151"
+      ]
+    },
+    {
+      "title": "tell the vision",
+      "count": 11,
+      "sample_ids": [
+        "yetracker-4d9e5d4e2e5f34cd",
+        "yetracker-7b03113d679dfc60",
+        "yetracker-19ac2fae8d7f4f28",
+        "yetracker-501be4f80506eade",
+        "yetracker-1ec5be12cca2a531",
+        "yetracker-97d5d78561af7899"
+      ]
+    },
+    {
+      "title": "pablo",
+      "count": 11,
+      "sample_ids": [
+        "yetracker-5691e1947f4993c3",
+        "yetracker-56146d4efb22bab9",
+        "yetracker-2ee7e59512fe3432",
+        "yetracker-ae014f33f7e6f55c",
+        "yetracker-2d252e5937e4d666",
+        "yetracker-7d5d250bb5df5b59"
+      ]
+    },
+    {
+      "title": "yeezy season 7 unreleased bouclette calabasas sample socks",
+      "count": 11,
+      "sample_ids": [
+        "parisaint-893bb2b8ea3dc8a8",
+        "parisaint-a7ee7e302b1e5a52",
+        "parisaint-182d96fb008bcb0b",
+        "parisaint-c5a869fdf8f487f5",
+        "parisaint-bfd970341231991e",
+        "parisaint-6d326f4c4c7bdb00"
+      ]
+    },
+    {
+      "title": "yeezy 700 v3",
+      "count": 11,
+      "sample_ids": [
+        "yeezyarchive-b8e0f249365220ed",
+        "yeezyarchive-ea539d40ec1bba97",
+        "yeezyarchive-03c425e642bc9de0",
+        "yeezyarchive-9ce157abcd861b02",
+        "yeezyarchive-466d83a19e735e4e",
+        "yeezyarchive-95447e8256d02e79"
+      ]
+    },
+    {
+      "title": "ls 03",
+      "count": 11,
+      "sample_ids": [
+        "yeezyarchive-b3d5215687907a93",
+        "yeezyarchive-0f6fb478746a6574",
+        "yeezyarchive-40b90bdf1c27ee5a",
+        "yeezyarchive-5727b453077c2822",
+        "yeezyarchive-cf9abf64d093d7f2",
+        "yeezyarchive-c41f9cddd011feda"
+      ]
+    },
+    {
+      "title": "bianca",
+      "count": 10,
+      "sample_ids": [
+        "yetracker-c88f5582ebde57a6",
+        "yetracker-66e10a6d0cae8b6d",
+        "yetracker-5bf76f323340fbee",
+        "yetracker-217286edab662168",
+        "yetracker-8da4b86459adff8d",
+        "yetracker-b9d778be00648a5d"
+      ]
+    },
+    {
+      "title": "beat 1",
+      "count": 10,
+      "sample_ids": [
+        "yetracker-87b186a6dd6f9c93",
+        "yetracker-d9c60002156108ea",
+        "yetracker-36111bff50d6b91c",
+        "yetracker-fbf5376e664b29e7",
+        "yetracker-0afb1be9b3d4c572",
+        "yetracker-e32d9929a3ee7f97"
+      ]
+    },
+    {
+      "title": "beat 7",
+      "count": 10,
+      "sample_ids": [
+        "yetracker-d2e8b6346e2ee657",
+        "yetracker-b7081836ecdbaef0",
+        "yetracker-8982f6b75de3909c",
+        "yetracker-8c2c8a475d0a815d",
+        "yetracker-db8b255568b83f94",
+        "yetracker-543fcd7af84bbf0a"
+      ]
+    },
+    {
+      "title": "beat 8",
+      "count": 10,
+      "sample_ids": [
+        "yetracker-3de4ce6af9e2fdf3",
+        "yetracker-8f024a4f7aacfa0a",
+        "yetracker-d94f80f8af421b34",
+        "yetracker-ffcc75ca3b1062a5",
+        "yetracker-9c001fd87777300d",
+        "yetracker-c0e67c52c1279b3c"
+      ]
+    },
+    {
+      "title": "last name",
+      "count": 10,
+      "sample_ids": [
+        "yetracker-c1df528ae593ab25",
+        "yetracker-46964ee5c296cacc",
+        "yetracker-a90c1aa4eaf95134",
+        "yetracker-16e86cc34945fef7",
+        "yetracker-5716348332390629",
+        "yetracker-12151659a46caaab"
+      ]
+    },
+    {
+      "title": "welcome to my life",
+      "count": 10,
+      "sample_ids": [
+        "yetracker-6a1e6b630263c350",
+        "yetracker-60a4539d969696eb",
+        "yetracker-52e06c461f61f4e0",
+        "yetracker-4573bff7de03a4ab",
+        "yetracker-c99c8ebd6cd7e15b",
+        "yetracker-115df02d2fe85cec"
+      ]
+    },
+    {
+      "title": "yeezy boost 700 mnvn",
+      "count": 10,
+      "sample_ids": [
+        "yeezyarchive-2329e596c1769c99",
+        "yeezyarchive-02fe753ec943c8ba",
+        "yeezyarchive-7b6b4f566efa65c1",
+        "yeezyarchive-4d43e43db1a94d26",
+        "yeezyarchive-acb080fd70701b96",
+        "yeezyarchive-ca3281acaeff0dc1"
+      ]
+    },
+    {
+      "title": "hd 01",
+      "count": 10,
+      "sample_ids": [
+        "yeezyarchive-c2c6a681bcd07ce8",
+        "yeezyarchive-5eed68c856df3351",
+        "yeezyarchive-c4fb0d005699260b",
+        "yeezyarchive-a2bf83eac063aee6",
+        "yeezyarchive-301a8643ad964f2d",
+        "yeezyarchive-6aad19f51bf944f9"
+      ]
+    },
+    {
+      "title": "mask hd 01",
+      "count": 10,
+      "sample_ids": [
+        "yeezyarchive-fbc8d6ab1e86bc1f",
+        "yeezyarchive-67067c2dca991ed8",
+        "yeezyarchive-3409eaf51478637d",
+        "yeezyarchive-a75bd54c1b9b9b54",
+        "yeezyarchive-4bca026781ff5114",
+        "yeezyarchive-d1708e3970d77e5c"
+      ]
+    },
+    {
+      "title": "king",
+      "count": 9,
+      "sample_ids": [
+        "yetour-1a72be802aa6538b",
+        "yetour-c2e666438abf60e4",
+        "yetracker-38926420aa7c5364",
+        "yetracker-3ddc007facb505d6",
+        "yetracker-331cc8bae4e4354d",
+        "yetracker-93157e4dbea003b9"
+      ]
+    },
+    {
+      "title": "kids see ghosts",
+      "count": 9,
+      "sample_ids": [
+        "yetracker-85e0147b0f141041",
+        "yetracker-8d9c4679c0767732",
+        "yetracker-24afa4d8ce4e8bee",
+        "yetracker-df3f2ca632f4838a",
+        "yetracker-b0ad7883b1c98960",
+        "yetracker-c186880ac46dfe0e"
+      ]
+    },
+    {
+      "title": "life of the party",
+      "count": 9,
+      "sample_ids": [
+        "yetracker-afb1f12adac12110",
+        "yetracker-2f8baea034d80d52",
+        "yetracker-5226cd8f06ce6721",
+        "yetracker-c486edb444535dbd",
+        "yetracker-18cf9285c4399839",
+        "yetracker-ed570e6146d4357f"
+      ]
+    },
+    {
+      "title": "vultures vol. 1",
+      "count": 9,
+      "sample_ids": [
+        "yetracker-a249246dce3db80b",
+        "yetracker-572fa369a1f175a9",
+        "yetracker-282b589d5f2f220b",
+        "yetracker-c857a15af6046b49",
+        "yetracker-c722f7fa720a0564",
+        "yetracker-a233185adbdd55fa"
+      ]
+    },
+    {
+      "title": "heil hitler",
+      "count": 9,
+      "sample_ids": [
+        "yetracker-ec564e0658631aaf",
+        "yetracker-6fbbd7976f39ab4b",
+        "yetracker-2f33d57113d25c83",
+        "yetracker-4a87f8127bad83a4",
+        "yetracker-6dd6084ef72a801a",
+        "yetracker-9bb4130c659a2fcf"
+      ]
+    },
+    {
+      "title": "new body",
+      "count": 9,
+      "sample_ids": [
+        "yetracker-0c96224dce6e08d8",
+        "yetracker-0591ac4c0404ecbc",
+        "yetracker-5ddef94307e19836",
+        "yetracker-bdc3fdfe09680de5",
+        "yetracker-dba6efb2c58158cc",
+        "yetracker-894d6c94cc07e7b3"
+      ]
+    },
+    {
+      "title": "we got love",
+      "count": 9,
+      "sample_ids": [
+        "yetracker-c04ab967eb7dc224",
+        "yetracker-219cff7f0ad90749",
+        "yetracker-5e41124a1ac20bdd",
+        "yetracker-a749c3753153b044",
+        "yetracker-ba4b53c522bd27ac",
+        "yetracker-fea926b26e71649b"
+      ]
+    },
+    {
+      "title": "wake the dead",
+      "count": 9,
+      "sample_ids": [
+        "yetracker-12ee08f76dd9be95",
+        "yetracker-ebd02af1234c7ccf",
+        "yetracker-59e138e0a35e3a74",
+        "yetracker-b1fa1a35df99dc5c",
+        "yetracker-e86cc55c837d1e8b",
+        "yetracker-b3d51ce82abf89b4"
+      ]
+    },
+    {
+      "title": "i know god breathed on this",
+      "count": 9,
+      "sample_ids": [
+        "yetracker-e08d237cee2ace35",
+        "yetracker-ca62bf5c4075cede",
+        "yetracker-f9dbefe33b77c659",
+        "yetracker-e0a6f6c6942c4384",
+        "yetracker-763e340caa0dff29",
+        "yetracker-5d7b146e2f48cece"
+      ]
+    },
+    {
+      "title": "keep my spirit alive",
+      "count": 9,
+      "sample_ids": [
+        "yetracker-855d22344a527bbb",
+        "yetracker-e13969128622c1a6",
+        "yetracker-32147dab27747f04",
+        "yetracker-63510cc153b35963",
+        "yetracker-f590d7862bb362a7",
+        "yetracker-f31e4a507092af54"
+      ]
+    },
+    {
+      "title": "river",
+      "count": 9,
+      "sample_ids": [
+        "yetracker-dbed32913a096749",
+        "yetracker-9d52bb0a6b6df376",
+        "yetracker-b7c67851ec43b4e7",
+        "yetracker-7a35a0b261fe1a52",
+        "yetracker-4aed25ede812619e",
+        "yetracker-5e2661c324c09c18"
+      ]
+    },
+    {
+      "title": "i feel terrific",
+      "count": 9,
+      "sample_ids": [
+        "yetracker-0fa64910719fa725",
+        "yetracker-e92230795cf2bfe2",
+        "yetracker-be0a8bfa2e139e85",
+        "yetracker-e00e16611b9f05f2",
+        "yetracker-237b0d53cc51ef8a",
+        "yetracker-edb15af8aa8b1c44"
+      ]
+    },
+    {
+      "title": "yeezy 500 high",
+      "count": 9,
+      "sample_ids": [
+        "yeezyarchive-759a83d2bef78dcd",
+        "yeezyarchive-ff2d1b5db4e94f7a",
+        "yeezyarchive-939c17e35a60bcd0",
+        "yeezyarchive-7e6a273a53a130db",
+        "yeezyarchive-431cd70d312d1c21",
+        "yeezyarchive-94dcdecbaeaf3f7a"
+      ]
+    },
+    {
+      "title": "cargo pant",
+      "count": 9,
+      "sample_ids": [
+        "yzylibrary-74e9a676bc326f4b",
+        "yzylibrary-c81b2f0cbfcb3771",
+        "yzylibrary-d5a358409cd78149",
+        "yzylibrary-30a29fa2d77f4bf7",
+        "yzylibrary-bbeab7088664c5ee",
+        "yzylibrary-7559c91f1fddce6a"
+      ]
+    },
+    {
+      "title": "30 hours",
+      "count": 8,
+      "sample_ids": [
+        "yetracker-8ab98ca9a0c9ddb1",
+        "yetracker-cabadce327e844d6",
+        "yetracker-ddd4e15dd2fd85a0",
+        "yetracker-0c122223c0b775f1",
+        "yetracker-2fc8cf5464a3a115",
+        "yetracker-cf6e2f33147ede60"
+      ]
+    },
+    {
+      "title": "champions",
+      "count": 8,
+      "sample_ids": [
+        "yetracker-84ed1794e770658d",
+        "yetracker-dab67e560668f758",
+        "yetracker-42c006a22129b7da",
+        "yetracker-ac54c661a862be89",
+        "yetracker-435466bb72a8b707",
+        "yetracker-eaed604741e03034"
+      ]
+    }
+  ],
+  "malformed_people_samples": [],
+  "unclassified_long_types": {},
+  "browsing": {
+    "domains": [
+      "FASHION",
+      "PERFORMANCE",
+      "FILM",
+      "MUSIC",
+      "DESIGN",
+      "EPHEMERA",
+      "WRITING",
+      "OBJECTS",
+      "PHOTOGRAPHY"
+    ],
+    "years": [
+      "1915",
+      "1949",
+      "1950",
+      "1965",
+      "1970",
+      "1971",
+      "1976",
+      "1977",
+      "1979",
+      "1980",
+      "1986",
+      "1988",
+      "1989",
+      "1990",
+      "1993",
+      "1994",
+      "1995",
+      "1996",
+      "1997",
+      "1998",
+      "1999",
+      "2000",
+      "2001",
+      "2002",
+      "2003",
+      "2004",
+      "2005",
+      "2006",
+      "2007",
+      "2008",
+      "2009",
+      "2010",
+      "2011",
+      "2012",
+      "2013",
+      "2014",
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2019",
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "statuses": [
+      "RELEASED",
+      "REALIZED",
+      "UNCONFIRMED",
+      "PARTIAL",
+      "UNRELEASED",
+      "FULL",
+      "NEVER RECORDED",
+      "CONFIRMED",
+      "OG FILE",
+      "TAGGED",
+      "STEM BOUNCE",
+      "RUMORED",
+      "BEAT ONLY",
+      "CONFLICTING SOURCES",
+      "NOT AVAILABLE",
+      "FULL HQ",
+      "FULL LOSSLESS",
+      "FULL CDQ",
+      "FULL LQ",
+      "PARTIAL HQ",
+      "RECORDING",
+      "FULL HQ (TAGGED)",
+      "FULL CDQ (TAGGED)",
+      "PARTIAL LQ",
+      "SAMPLE",
+      "LOST",
+      "CONCEPT",
+      "CANCELLED",
+      "PROTOTYPE",
+      "REFERENCE"
+    ],
+    "note": "Only categories with count > 0 are browsable. Do not invent empty mediums."
+  }
+}
