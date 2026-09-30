@@ -16,6 +16,36 @@ import { Provenance } from "../components/Meta";
 
 const SUGGEST_CAP = 8;
 
+const ROLE_RANK: Record<string, number> = {
+  product: 100,
+  "on-body": 90,
+  front: 80,
+  back: 70,
+  detail: 60,
+  label: 55,
+  construction: 50,
+  runway: 40,
+  prototype: 35,
+  sketch: 20,
+  render: 15,
+  reference: 10,
+  primary: 6,
+  unknown: 5,
+};
+
+function rankOf(role?: string | null) {
+  return ROLE_RANK[role ?? ""] ?? 5;
+}
+
+function fashionLabel(role?: string | null) {
+  if (role === "front") return "FRONT";
+  if (role === "back") return "BACK";
+  if (role === "on-body") return "ON BODY";
+  if (role === "detail" || role === "label" || role === "construction") return "DETAIL";
+  if (role === "sketch" || role === "render" || role === "reference") return "REFERENCE/SKETCH";
+  return null;
+}
+
 export function RecordPage() {
   const { id = GLOW_ID } = useParams();
   const [found, setFound] = useState<PackedRecord | null>(null);
@@ -50,8 +80,22 @@ export function RecordPage() {
 
   const isGlowMaster = id === GLOW_ID;
   const figma = isGlowMaster ? figmaScreen("04-record-glow-in-the-dark") : [];
+  const fashionStudy = !isGlowMaster && (found?.domain === "FASHION" || found?.domain === "OBJECTS");
 
-  const archiveImages = (found?.images ?? [])
+  const ranked = useMemo(() => {
+    if (!found) return [];
+    return found.images
+      .filter((img) => img.local_path)
+      .slice()
+      .sort((a, b) => {
+        const ra = rankOf(a.editorial_role ?? a.role);
+        const rb = rankOf(b.editorial_role ?? b.role);
+        if (rb !== ra) return rb - ra;
+        return (b.width ?? 0) - (a.width ?? 0);
+      });
+  }, [found]);
+
+  const archiveImages = ranked
     .map((img) => localSrc(img.local_path))
     .filter((src): src is string => Boolean(src));
 
@@ -60,6 +104,7 @@ export function RecordPage() {
     : archiveImages;
 
   const current = images[view] ?? images[0] ?? null;
+  const currentMeta = ranked[view] ?? ranked[0];
 
   const documented = useMemo(() => {
     if (!found || !index) return [];
@@ -114,7 +159,42 @@ export function RecordPage() {
     <main className="record fade-in">
       <div className="record__media">
         {current ? <LazyImg src={current} alt={found.title} /> : <div className="record__void" />}
-        {images.length > 1 ? (
+        {currentMeta && !isGlowMaster ? (
+          <div className="meta" style={{ marginTop: 12 }}>
+            {fashionStudy && fashionLabel(currentMeta.editorial_role)
+              ? fashionLabel(currentMeta.editorial_role)
+              : null}
+            {fashionStudy && fashionLabel(currentMeta.editorial_role) ? " · " : null}
+            {currentMeta.caption ? currentMeta.caption : `${ranked.length} source stills`}
+          </div>
+        ) : null}
+        {isGlowMaster ? (
+          <div className="meta" style={{ marginTop: 12 }}>
+            Glow in the Dark — master composition
+          </div>
+        ) : null}
+        {!isGlowMaster && ranked.length > 1 ? (
+          <div className={fashionStudy ? "record__study" : "record__viewer"}>
+            {ranked.map((img, i) => {
+              const src = localSrc(img.local_path);
+              if (!src) return null;
+              const label = fashionStudy ? fashionLabel(img.editorial_role) : null;
+              return (
+                <button
+                  key={`${img.original_url}-${i}`}
+                  type="button"
+                  className={i === view ? "is-on" : ""}
+                  onClick={() => setView(i)}
+                >
+                  <LazyImg src={src} alt="" />
+                  <span className="meta">
+                    {label ?? (fashionStudy ? "" : String(i + 1).padStart(2, "0"))}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+        ) : isGlowMaster && images.length > 1 ? (
           <div className="record__viewer">
             {images.map((src, i) => (
               <button
@@ -127,15 +207,6 @@ export function RecordPage() {
                 <span className="meta">{String(i + 1).padStart(2, "0")}</span>
               </button>
             ))}
-          </div>
-        ) : null}
-        {isGlowMaster ? (
-          <div className="meta" style={{ marginTop: 12 }}>
-            Glow in the Dark — master composition
-          </div>
-        ) : found.images[view]?.caption ? (
-          <div className="meta" style={{ marginTop: 12 }}>
-            {found.images[view].caption}
           </div>
         ) : null}
       </div>

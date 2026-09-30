@@ -37,8 +37,39 @@ function yearOf(r: ArchiveRecord): string | null {
   return m ? m[0] : null;
 }
 
+type RoleHint = { record_id: string; original_url: string; editorial_role: string; rank: number };
+const roleFile = (() => {
+  try {
+    return JSON.parse(readFileSync(join(root, "data/image-roles.json"), "utf8")) as {
+      images: RoleHint[];
+    };
+  } catch {
+    return { images: [] as RoleHint[] };
+  }
+})();
+const roleMap = new Map<string, RoleHint>();
+for (const row of roleFile.images) {
+  roleMap.set(`${row.record_id}|${row.original_url}`, row);
+}
+
+function roleFor(recordId: string, originalUrl: string): RoleHint | undefined {
+  return roleMap.get(`${recordId}|${originalUrl}`);
+}
+
+function rankedLocals(r: ArchiveRecord) {
+  return (r.images ?? [])
+    .filter((i) => i.local_path)
+    .slice()
+    .sort((a, b) => {
+      const ra = roleFor(r.id, a.original_url)?.rank ?? (a.role === "primary" ? 6 : 5);
+      const rb = roleFor(r.id, b.original_url)?.rank ?? (b.role === "primary" ? 6 : 5);
+      if (rb !== ra) return rb - ra;
+      return (b.width ?? 0) - (a.width ?? 0);
+    });
+}
+
 function firstImg(r: ArchiveRecord): string | null {
-  return publicUrl(r.images?.find((i) => i.local_path)?.local_path ?? null);
+  return publicUrl(rankedLocals(r)[0]?.local_path ?? null);
 }
 
 const SENTENCE = /cover art for|featuring kanye|posted by|designed by the/i;
@@ -325,14 +356,13 @@ for (const r of records) {
     source: r.source,
     source_claims: (r.source_claims ?? []).filter((c) => c.field !== "headers"),
     confidence: r.confidence,
-    images: (r.images ?? [])
-      .filter((i) => i.local_path)
-      .map((i) => ({
+    images: rankedLocals(r).map((i) => ({
         local_path: publicUrl(i.local_path),
         original_url: i.original_url,
         source_page: i.source_page,
         caption: i.caption,
         role: i.role,
+        editorial_role: roleFor(r.id, i.original_url)?.editorial_role ?? i.role,
         width: i.width,
         height: i.height,
       })),

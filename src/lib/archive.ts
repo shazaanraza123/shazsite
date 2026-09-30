@@ -55,6 +55,7 @@ export type PackedRecord = {
     height: number | null;
     caption: string | null;
     role: string;
+    editorial_role?: string;
   }[];
 };
 

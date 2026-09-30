@@ -852,6 +852,35 @@
   opacity: 1;
 }
 
+.record__study {
+  display: grid;
+  grid-template-columns: 1.1fr 0.7fr 0.9fr;
+  gap: 28px 18px;
+  margin-top: 36px;
+  align-items: end;
+}
+
+.record__study button:nth-child(3n + 2) {
+  margin-top: 48px;
+}
+
+.record__study button:nth-child(3n) {
+  margin-top: 88px;
+}
+
+.record__study img {
+  width: 100%;
+  mix-blend-mode: multiply;
+}
+
+.record__study button {
+  text-align: left;
+}
+
+.record__study .meta {
+  margin-top: 8px;
+}
+
 .unreal__index {
   margin-top: 96px;
   padding-top: 48px;
