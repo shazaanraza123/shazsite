@@ -158,7 +158,7 @@ export function RecordPage() {
   return (
     <main className="record fade-in">
       <div className="record__media">
-        {current ? <LazyImg src={current} alt={found.title} /> : <div className="record__void" />}
+        {current ? <LazyImg src={current} alt={found.title} loading="eager" /> : <div className="record__void" />}
         {currentMeta && !isGlowMaster ? (
           <div className="meta" style={{ marginTop: 12 }}>
             {fashionStudy && fashionLabel(currentMeta.editorial_role)
@@ -186,7 +186,7 @@ export function RecordPage() {
                   className={i === view ? "is-on" : ""}
                   onClick={() => setView(i)}
                 >
-                  <LazyImg src={src} alt="" />
+                  <LazyImg src={src} alt="" loading="eager" />
                   <span className="meta">
                     {label ?? (fashionStudy ? "" : String(i + 1).padStart(2, "0"))}
                   </span>

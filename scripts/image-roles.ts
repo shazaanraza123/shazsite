@@ -243,8 +243,20 @@ function classifyOne(opts: {
     look.skinRatio < 0.03;
   if (isIllustration) evidence.push(`flat-palette unique=${look!.unique} black=${look!.blackRatio.toFixed(2)}`);
 
-  if (isIllustration && opts.sourceRole === "primary" && !opts.caption?.includes("/products/")) {
+  if (isIllustration && opts.sourceRole === "primary" && !cameraFile) {
     evidence.push("source IsPrimary + illustration-like pixels");
+    return { role: "sketch", evidence };
+  }
+  // Catalog cards can be painted garments (red fill, black void) with a wider palette than line art.
+  if (
+    opts.sourceRole === "primary" &&
+    !cameraFile &&
+    look &&
+    look.blackRatio > 0.55 &&
+    look.unique < 80 &&
+    look.skinRatio < 0.01
+  ) {
+    evidence.push(`IsPrimary dark catalog card unique=${look.unique} black=${look.blackRatio.toFixed(2)}`);
     return { role: "sketch", evidence };
   }
 

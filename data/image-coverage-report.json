@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T05:15:07.441Z",
+  "generated_at": "2026-09-30T05:29:53.782Z",
   "adapter_gap": "yzylibrary.ts sorted Images by IsPrimary and downloaded maxDl=1 for non-highValue garments, so the catalog illustration was saved and product/on-body stills (later in the payload) were URL-only.",
   "downloaded_this_run": {
     "ok": 0,
@@ -131,7 +131,7 @@
       "roles_present": [
         "product",
         "on-body",
-        "unknown"
+        "sketch"
       ]
     },
     {
@@ -184,12 +184,12 @@
       "source_image_count": 5,
       "local_image_count": 5,
       "displayed_image_count": 5,
-      "hero_role": "product",
-      "hero_path": "public/archive/yzylibrary.com/yzy-gap/red-leather-pants-01.jpg",
+      "hero_role": "on-body",
+      "hero_path": "public/archive/yzylibrary.com/yzy-gap/red-leather-pants-02.jpg",
       "missing_images": [],
       "roles_present": [
-        "product",
-        "on-body"
+        "on-body",
+        "sketch"
       ]
     },
     {

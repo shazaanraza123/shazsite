@@ -870,6 +870,7 @@
 
 .record__study img {
   width: 100%;
+  min-height: 120px;
   mix-blend-mode: multiply;
 }
 
