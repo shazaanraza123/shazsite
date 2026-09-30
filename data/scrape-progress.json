@@ -1,0 +1,32 @@
+{
+  "generated_at": "2026-09-30T01:06:44.464912+00:00",
+  "current_source": null,
+  "current_activity": "complete",
+  "process_alive": false,
+  "stuck_or_waiting": false,
+  "total_records": 28083,
+  "total_images_on_disk": 10847,
+  "images_downloaded_index": 14952,
+  "figma_export_file_count": 93,
+  "records_per_source": {
+    "yzytwts": 0,
+    "yetracker-net": 0,
+    "yetour": 221,
+    "yetracker": 22951,
+    "parisaint": 1097,
+    "yeezyarchive": 2181,
+    "yzylibrary": 1633
+  },
+  "skipped_sources": [
+    "yzytwts",
+    "yetracker-net",
+    "instagram",
+    "reddit"
+  ],
+  "fashion_06": "REGULAR FIT LS TEE (H03) https://yzylibrary.com/record/8 \u2014 6 views, one garment",
+  "output_paths": {
+    "figma": "/workspace/figma-export/",
+    "archive": "/workspace/public/archive/",
+    "data": "/workspace/data/"
+  }
+}

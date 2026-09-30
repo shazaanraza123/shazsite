@@ -1,4 +1,4 @@
-import { copyFile, mkdir, writeFile } from "node:fs/promises";
+import { copyFile, mkdir, writeFile, readdir, unlink } from "node:fs/promises";
 import path from "node:path";
 import { ROOT, log } from "../scrapers/base.ts";
 import type { ArchiveRecord, ArchiveImage } from "../scrapers/types.ts";
@@ -15,6 +15,14 @@ interface Pick {
 
 function downloaded(rec: ArchiveRecord): ArchiveImage[] {
   return rec.images.filter((i) => i.local_path);
+}
+
+async function emptyDir(dir: string): Promise<void> {
+  await mkdir(dir, { recursive: true });
+  const ents = await readdir(dir, { withFileTypes: true }).catch(() => []);
+  for (const e of ents) {
+    if (e.isFile()) await unlink(path.join(dir, e.name));
+  }
 }
 
 function blob(rec: ArchiveRecord): string {
@@ -187,11 +195,17 @@ export async function buildFigmaExport(records: ArchiveRecord[]): Promise<void> 
     take("05-music", "05-music", r, img, "music-visual", "Album/cover/doc strip. Do not crop into square unless source is square.", mIdx++);
   }
 
-  // 06 FASHION — ONE garment, multiple images
+  // 06 FASHION — ONE documented garment, multiple source images only
   const garments = withImg
-    .filter((r) => r.type === "garment" || r.domain === "FASHION")
-    .filter((r) => downloaded(r).length >= 3)
-    .sort((a, b) => downloaded(b).length - downloaded(a).length);
+    .filter((r) => r.type === "garment" || r.type === "product")
+    .filter((r) => downloaded(r).length >= 4)
+    .sort((a, b) => {
+      const dl = downloaded(b).length - downloaded(a).length;
+      if (dl !== 0) return dl;
+      const aLib = a.source.name.includes("YZY Library") ? 1 : 0;
+      const bLib = b.source.name.includes("YZY Library") ? 1 : 0;
+      return bLib - aLib;
+    });
   const garment = garments[0];
   if (garment) {
     let fIdx = 1;
@@ -201,8 +215,8 @@ export async function buildFigmaExport(records: ArchiveRecord[]): Promise<void> 
         "06-fashion",
         garment,
         img,
-        img.role === "primary" ? "garment-primary" : "garment-view",
-        "Same garment only. Front / additional views as source provides. Do not mix pieces.",
+        fIdx === 1 || img.role === "primary" ? "garment-primary" : "garment-view",
+        `Same garment only: ${garment.title}. Front/additional views as the source provides. Do not mix pieces.`,
         fIdx++,
       );
     }
@@ -241,7 +255,7 @@ export async function buildFigmaExport(records: ArchiveRecord[]): Promise<void> 
     "07-unrealized",
     "08-connections",
   ]) {
-    await mkdir(path.join(ROOT, "figma-export", folder), { recursive: true });
+    await emptyDir(path.join(ROOT, "figma-export", folder));
   }
 
   await copyPicked(picks);

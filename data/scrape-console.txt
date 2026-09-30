@@ -1,0 +1,12 @@
+YE ARCHIVE SCRAPE COMPLETE
+yzytwts: records=0 images=0 referenced=0 failed=0 skipped=true
+  skip: robots.txt User-agent: * Disallow: / — automated crawling is disallowed
+yetracker-net: records=0 images=0 referenced=0 failed=0 skipped=true
+  skip: Google Sheets document with x-robots-tag noindex,nofollow; not a crawlable public HTML catalog
+yetour: records=221 images=342 referenced=453 failed=0 skipped=false
+yetracker: records=22951 images=972 referenced=996 failed=0 skipped=false
+parisaint: records=1097 images=3249 referenced=6145 failed=0 skipped=false
+yeezyarchive: records=2181 images=4330 referenced=5010 failed=0 skipped=false
+yzylibrary: records=1633 images=6059 referenced=12950 failed=483 skipped=false
+TOTAL=28083 DUPLICATES=23094 FAILED=483 SKIPPED=2
+UNCRAWLED: yzytwts: robots.txt User-agent: * Disallow: / — automated crawling is disallowed | yetracker-net: Google Sheets document with x-robots-tag noindex,nofollow; not a crawlable public HTML catalog

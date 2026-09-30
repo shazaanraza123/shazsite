@@ -1,0 +1,2 @@
+Incremental Figma copies at 2026-09-30T00:28:32.797402+00:00. Full FIGMA_IMAGE_GUIDE.md arrives when scrape completes.
+Copied 83 placements (83 files in repo figma-export).
