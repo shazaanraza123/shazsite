@@ -23,8 +23,11 @@ const DISC = [
 ];
 
 export function EraYeezus() {
-  const items = figmaScreen("03-era-yeezus");
-  const cover = items.find((x) => x.record_id === "yetracker-f73bd06a80d43c9a") ?? items[1];
+  const items = figmaScreen("03-era-yeezus").filter(
+    (x) => !x.file.includes("03-era-yeezus-02-yeezus"),
+  );
+  const cover =
+    items.find((x) => x.file.includes("alternate-cover-1")) ?? items[0];
 
   return (
     <main className="era fade-in">
